@@ -5,23 +5,23 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Airbnb</title>
     <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="index.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=toggle_on" />
 </head>
 <body>
     <header>
         <!--Nav bar-->
-        <nav class="grid grid-cols-3 px-16 w-screen h-20 border-b-[1px] items-center fixed top-0 bg-white">
+        <nav class="flex items-center gap-4 fixed top-0 h-20 bg-white sm:grid sm:grid-cols-3 sm:px-16 sm:w-screen sm:h-20 sm:border-b-[1px] sm:items-center sm:fixed sm:top-0 sm:bg-white">
             <img src="static/airbnb-logo.png" alt="" class="w-28 h-16"/>
-            <div class="flex border rounded-full justify-evenly items-center font-bold shadow-md h-12 w-96 ">
+            <div class="flex border rounded-full items-center justify-evenly font-bold shadow-md h-8 w-52 sm:flex sm:border sm:rounded-full sm:justify-evenly sm:items-center sm:font-bold sm:shadow-md sm:h-12 sm:w-96 ">
                 <button class="border-r-2 font-medium text-sm pr-4">Anywhere</button>
                 <button class="border-r-2 font-medium text-sm pr-4">Any week</button>
                 <button class="text-sm font-medium text-gray-500 pr-4">Add guests</button>
                 <i class='bx bx-search-alt-2 text-white bg-red-500 rounded-full p-2'></i>
             </div>
-            <div class="flex justify-end gap-8 items-center ">
-                <button class="font-medium text-sm">Airbnb your home</button>
-                <span class='bx bx-globe' ></span>
+            <div class="flex items-center justify-end gap-4">
+                <span class='bx bx-globe'></span>
                 <div class="flex items-center justify-evenly border rounded-full h-10 w-20 gap-2 shadow-md text-gray-700">
                     <i class='bx bx-menu' ></i>
                     <button class='bx bxs-user-circle'></button>
@@ -102,35 +102,22 @@
 
     <main class="mt-14">
         <div class="grid grid-cols-4 px-6 gap-16" >
-            <div class="flex flex-col h-56 w-48">
-                <img src="static/img1.jpg" alt="" class="w-72 h-64 rounded-xl"/>
-                <div class="flex justify-between mt-2">
-                    <p class="text-xs font-medium">Kakinada,India</p>
-                    <div class="flex">
-                        <i class='bx bxs-star'></i>
-                        <p class="text-xs font-light">5.0</p>
-                    </div>
-                </div>
-                <p class="text-xs text-gray-400">62 kilometers away</p>
-                <p class="text-xs text-gray-400">30 july- 4 Aug</p>
-                <p class="text-xs font-medium mt-2">₹42,000 night</p>
-            </div>
-
-            <div class="flex flex-col h-56 w-48">
-                <img src="static/img1.jpg" alt="" class="w-72 h-64 rounded-xl"/>
-                <div class="flex justify-between mt-2">
-                    <p class="text-xs font-medium">Kakinada,India</p>
-                    <div class="flex">
-                        <i class='bx bxs-star'></i>
-                        <p class="text-xs font-light">5.0</p>
-                    </div>
-                </div>
-                <p class="text-xs text-gray-400">62 kilometers away</p>
-                <p class="text-xs text-gray-400">30 july- 4 Aug</p>
-                <p class="text-xs font-medium mt-2">₹42,000 night</p>
-            </div>
 
            <div class="flex flex-col w-72 h-96">
+               <img src="static/img1.jpg" alt="" class="w-72 h-64 rounded-xl"/>
+               <div class="flex justify-between mt-2">
+                   <p class="font-medium text-sm">Kakinada,India</p>
+                   <div class="flex">
+                       <i class='bx bxs-star'></i>
+                       <p class="text-sm font-light">5.0</p>
+                   </div>
+               </div>
+                   <p class="text-gray-400 text-sm">62 kilometers away</p>
+                   <p class="text-gray-400 text-sm">30 july- 4 Aug</p>
+                   <p class=" text-sm font-medium mt-2">₹42,000 night</p>
+           </div>
+
+            <div class="flex flex-col w-72 h-96">
                <img src="static/img2.jpg" alt="" class="w-72 h-64 rounded-xl"/>
                <div class="flex justify-between mt-2">
                    <p class="font-medium text-sm">Kakinada,India</p>
@@ -146,6 +133,20 @@
 
             <div class="flex flex-col w-72 h-96">
                <img src="static/img3.jpg" alt="" class="w-72 h-64 rounded-xl"/>
+               <div class="flex justify-between mt-2">
+                   <p class="font-medium text-sm">Kakinada,India</p>
+                   <div class="flex">
+                       <i class='bx bxs-star'></i>
+                       <p class="text-sm font-light">5.0</p>
+                   </div>
+               </div>
+                   <p class="text-gray-400 text-sm">62 kilometers away</p>
+                   <p class="text-gray-400 text-sm">30 july- 4 Aug</p>
+                   <p class=" text-sm font-medium mt-2">₹42,000 night</p>
+           </div>
+
+            <div class="flex flex-col w-72 h-96">
+               <img src="static/img4.jpg" alt="" class="w-72 h-64 rounded-xl"/>
                <div class="flex justify-between mt-2">
                    <p class="font-medium text-sm">Kakinada,India</p>
                    <div class="flex">
