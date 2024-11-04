@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Airbnb</title>
+    <link rel="stylesheet" href="output.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=toggle_on" />
+</head>
+<body>
+    <header>
+        <!--Nav bar-->
+        <nav class="grid grid-cols-3 px-16 w-screen h-20 border-b-[1px] items-center fixed top-0 bg-white">
+            <img src="static/airbnb-logo.png" alt="" class="w-28 h-16"/>
+            <div class="flex border rounded-full justify-evenly items-center font-bold shadow-md h-12 w-96 ">
+                <button class="border-r-2 font-medium text-sm pr-4">Anywhere</button>
+                <button class="border-r-2 font-medium text-sm pr-4">Any week</button>
+                <button class="text-sm font-medium text-gray-500 pr-4">Add guests</button>
+                <i class='bx bx-search-alt-2 text-white bg-red-500 rounded-full p-2'></i>
+            </div>
+            <div class="flex justify-end gap-8 items-center ">
+                <button class="font-medium text-sm">Airbnb your home</button>
+                <span class='bx bx-globe' ></span>
+                <div class="flex items-center justify-evenly border rounded-full h-10 w-20 gap-2 shadow-md text-gray-700">
+                    <i class='bx bx-menu' ></i>
+                    <button class='bx bxs-user-circle'></button>
+                </div>
+            </div>
+        </nav>
+        <!--Category bar-->
+        <div class="flex h-24 items-center  px-16 justify-evenly fixed top-20 bg-white w-screen">
+            <div class="flex space-x-14 justify-center items-center text-gray-400 cursor-pointer">
+                <div class="flex flex-col items-center gap-2">
+                    <img src="./static/type1.jpeg" alt="" class="w-7 h-7 "/>
+                    <p class="font-medium text-gray-400 hover:text-black text-xs">Amazing pools</p>
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                    <img src="./static/type2.jpeg" alt="" class="w-7 h-7 "/>
+                    <p class="font-medium text-gray-400 hover:text-black text-xs">Farms</p>
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                    <img src="./static/type3.jpeg" alt="" class="w-7 h-7 "/>
+                    <p class="font-medium text-gray-400 hover:text-black text-xs">Amazing view</p>
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                    <img src="./static/type4.jpeg" alt="" class="w-7 h-7 "/>
+                    <p class="font-medium text-gray-400 hover:text-black text-xs">cabins</p>
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                    <img src="./static/type5.jpeg" alt="" class="w-7 h-7 "/>
+                    <p class="font-medium text-gray-400 hover:text-black text-xs">Golfing</p>
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                    <img src="./static/type6.jpeg" alt="" class="w-7 h-7 "/>
+                    <p class="font-medium text-gray-400 hover:text-black text-xs">Lakefront</p>
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                    <img src="./static/type7.jpeg" alt="" class="w-7 h-7 "/>
+                    <p class="font-medium text-gray-400 hover:text-black text-xs">Rooms</p>
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                    <img src="./static/type8.jpeg" alt="" class="w-7 h-7 "/>
+                    <p class="font-medium text-gray-400 hover:text-black text-xs">Beachfront</p>
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                    <img src="./static/type9.jpeg" alt="" class="w-7 h-7 "/>
+                    <p class="font-medium text-gray-400 hover:text-black text-xs">OMG!</p>
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                    <img src="./static/type10.jpeg" alt="" class="w-7 h-7 "/>
+                    <p class="font-medium text-gray-400 hover:text-black text-xs">countryside</p>
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                    <img src="./static/type11.jpeg" alt="" class="w-7 h-7 "/>
+                    <p class="font-medium text-gray-400 hover:text-black text-xs">Tropical</p>
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                    <img src="./static/type12.jpeg" alt="" class="w-7 h-7 "/>
+                    <p class="font-medium text-gray-400 hover:text-black text-xs">Tiny homes</p>
+                </div>
+            </div>
+            <div class="flex justify-evenly gap-8 items-center">
+                <img src="static/circle.svg" alt=""/>
+                <div class="flex border shadow-md rounded-xl justify-around items-center h-12 w-24">
+                    <i class='bx bx-filter-alt pl-2'></i>
+                    <p class="font-medium text-xs pr-3">Filters</p>
+            </div>
+            </div>
+        </div>
+        <!--Price bar-->
+        <div class="flex justify-center px-16 mt-48">
+            <div class="flex justify-between items-center p-4 gap-4 border rounded-xl w-[600px] h-16">
+                <div class="flex  gap-3">
+                    <p class="text-base border-r-2 border-gray-400 pr-4 font-medium">Display total price</p>
+                    <p class="text-base text-gray-400">Includes all fees,before taxes</p>
+                </div>
+                <img alt="" class="text-gray-400" src="static/toggle.svg"/>
+            </div>
+        </div>
+    </header>
+
+    <main class="mt-14">
+        <div class="grid grid-cols-4 px-6 gap-16" >
+            <div class="flex flex-col h-56 w-48">
+                <img src="static/img1.jpg" alt="" class="w-72 h-64 rounded-xl"/>
+                <div class="flex justify-between mt-2">
+                    <p class="text-xs font-medium">Kakinada,India</p>
+                    <div class="flex">
+                        <i class='bx bxs-star'></i>
+                        <p class="text-xs font-light">5.0</p>
+                    </div>
+                </div>
+                <p class="text-xs text-gray-400">62 kilometers away</p>
+                <p class="text-xs text-gray-400">30 july- 4 Aug</p>
+                <p class="text-xs font-medium mt-2">₹42,000 night</p>
+            </div>
+
+            <div class="flex flex-col h-56 w-48">
+                <img src="static/img1.jpg" alt="" class="w-72 h-64 rounded-xl"/>
+                <div class="flex justify-between mt-2">
+                    <p class="text-xs font-medium">Kakinada,India</p>
+                    <div class="flex">
+                        <i class='bx bxs-star'></i>
+                        <p class="text-xs font-light">5.0</p>
+                    </div>
+                </div>
+                <p class="text-xs text-gray-400">62 kilometers away</p>
+                <p class="text-xs text-gray-400">30 july- 4 Aug</p>
+                <p class="text-xs font-medium mt-2">₹42,000 night</p>
+            </div>
+
+           <div class="flex flex-col w-72 h-96">
+               <img src="static/img2.jpg" alt="" class="w-72 h-64 rounded-xl"/>
+               <div class="flex justify-between mt-2">
+                   <p class="font-medium text-sm">Kakinada,India</p>
+                   <div class="flex">
+                       <i class='bx bxs-star'></i>
+                       <p class="text-sm font-light">5.0</p>
+                   </div>
+               </div>
+                   <p class="text-gray-400 text-sm">62 kilometers away</p>
+                   <p class="text-gray-400 text-sm">30 july- 4 Aug</p>
+                   <p class=" text-sm font-medium mt-2">₹42,000 night</p>
+           </div>
+
+            <div class="flex flex-col w-72 h-96">
+               <img src="static/img3.jpg" alt="" class="w-72 h-64 rounded-xl"/>
+               <div class="flex justify-between mt-2">
+                   <p class="font-medium text-sm">Kakinada,India</p>
+                   <div class="flex">
+                       <i class='bx bxs-star'></i>
+                       <p class="text-sm font-light">5.0</p>
+                   </div>
+               </div>
+                   <p class="text-gray-400 text-sm">62 kilometers away</p>
+                   <p class="text-gray-400 text-sm">30 july- 4 Aug</p>
+                   <p class=" text-sm font-medium mt-2">₹42,000 night</p>
+           </div>
+
+            <div class="flex flex-col w-72 h-96">
+               <img src="static/img4.jpg" alt="" class="w-72 h-64 rounded-xl"/>
+               <div class="flex justify-between mt-2">
+                   <p class="font-medium text-sm">Kakinada,India</p>
+                   <div class="flex">
+                       <i class='bx bxs-star'></i>
+                       <p class="text-sm font-light">5.0</p>
+                   </div>
+               </div>
+                   <p class="text-gray-400 text-sm">62 kilometers away</p>
+                   <p class="text-gray-400 text-sm">30 july- 4 Aug</p>
+                   <p class=" text-sm font-medium mt-2">₹42,000 night</p>
+           </div>
+
+            <div class="flex flex-col w-72 h-96">
+               <img src="static/img3.jpg" alt="" class="w-72 h-64 rounded-xl"/>
+               <div class="flex justify-between mt-2">
+                   <p class="font-medium text-sm">Kakinada,India</p>
+                   <div class="flex">
+                       <i class='bx bxs-star'></i>
+                       <p class="text-sm font-light">5.0</p>
+                   </div>
+               </div>
+                   <p class="text-gray-400 text-sm">62 kilometers away</p>
+                   <p class="text-gray-400 text-sm">30 july- 4 Aug</p>
+                   <p class=" text-sm font-medium mt-2">₹42,000 night</p>
+           </div>
+
+            <div class="flex flex-col w-72 h-96">
+               <img src="static/img1.jpg" alt="" class="w-72 h-64 rounded-xl"/>
+               <div class="flex justify-between mt-2">
+                   <p class="font-medium text-sm">Kakinada,India</p>
+                   <div class="flex">
+                       <i class='bx bxs-star'></i>
+                       <p class="text-sm font-light">5.0</p>
+                   </div>
+               </div>
+                   <p class="text-gray-400 text-sm">62 kilometers away</p>
+                   <p class="text-gray-400 text-sm">30 july- 4 Aug</p>
+                   <p class=" text-sm font-medium mt-2">₹42,000 night</p>
+           </div>
+
+            <div class="flex flex-col w-72 h-96">
+               <img src="static/img4.jpg" alt="" class="w-72 h-64 rounded-xl"/>
+               <div class="flex justify-between mt-2">
+                   <p class="font-medium text-sm">Kakinada,India</p>
+                   <div class="flex">
+                       <i class='bx bxs-star'></i>
+                       <p class="text-sm font-light">5.0</p>
+                   </div>
+               </div>
+                   <p class="text-gray-400 text-sm">62 kilometers away</p>
+                   <p class="text-gray-400 text-sm">30 july- 4 Aug</p>
+                   <p class=" text-sm font-medium mt-2">₹42,000 night</p>
+           </div>
+
+            <div class="flex flex-col w-72 h-96">
+               <img src="static/img3.jpg" alt="" class="w-72 h-64 rounded-xl"/>
+               <div class="flex justify-between mt-2">
+                   <p class="font-medium text-sm">Kakinada,India</p>
+                   <div class="flex">
+                       <i class='bx bxs-star'></i>
+                       <p class="text-sm font-light">5.0</p>
+                   </div>
+               </div>
+                   <p class="text-gray-400 text-sm">62 kilometers away</p>
+                   <p class="text-gray-400 text-sm">30 july- 4 Aug</p>
+                   <p class=" text-sm font-medium mt-2">₹42,000 night</p>
+           </div>
+
+            <div class="flex flex-col w-72 h-96">
+               <img src="static/img2.jpg" alt="" class="w-72 h-64 rounded-xl"/>
+               <div class="flex justify-between mt-2">
+                   <p class="font-medium text-sm">Kakinada,India</p>
+                   <div class="flex">
+                       <i class='bx bxs-star'></i>
+                       <p class="text-sm font-light">5.0</p>
+                   </div>
+               </div>
+                   <p class="text-gray-400 text-sm">62 kilometers away</p>
+                   <p class="text-gray-400 text-sm">30 july- 4 Aug</p>
+                   <p class=" text-sm font-medium mt-2">₹42,000 night</p>
+           </div>
+
+            <div class="flex flex-col w-72 h-96">
+               <img src="static/img1.jpg" alt="" class="w-72 h-64 rounded-xl"/>
+               <div class="flex justify-between mt-2">
+                   <p class="font-medium text-sm">Kakinada,India</p>
+                   <div class="flex">
+                       <i class='bx bxs-star'></i>
+                       <p class="text-sm font-light">5.0</p>
+                   </div>
+               </div>
+                   <p class="text-gray-400 text-sm">62 kilometers away</p>
+                   <p class="text-gray-400 text-sm">30 july- 4 Aug</p>
+                   <p class=" text-sm font-medium mt-2">₹42,000 night</p>
+           </div>
+
+            <div class="flex flex-col h-96 w-72">
+                <img src="static/img1.jpg" alt="" class="w-72 h-64 rounded-xl"/>
+                <div class="flex justify-between mt-2">
+                    <p class="text-sm font-medium">Kakinada,India</p>
+                    <div class="flex ">
+                        <i class='bx bxs-star'></i>
+                        <p class="text-sm font-light">5.0</p>
+                    </div>
+                </div>
+                <p class="text-sm text-gray-400">62 kilometers away</p>
+                <p class="text-sm text-gray-400">30 july- 4 Aug</p>
+                <p class="text-sm font-medium mt-2">₹42,000 night</p>
+            </div>
+
+            <div class="flex flex-col h-96 w-72">
+                <img src="static/img2.jpg" alt="" class="w-72 h-64 rounded-xl"/>
+                <div class="flex justify-between mt-2">
+                    <p class="text-sm font-medium">Kakinada,India</p>
+                    <div class="flex ">
+                        <i class='bx bxs-star'></i>
+                        <p class="text-sm font-light">5.0</p>
+                    </div>
+                </div>
+                <p class="text-sm text-gray-400">62 kilometers away</p>
+                <p class="text-sm text-gray-400">30 july- 4 Aug</p>
+                <p class="text-sm font-medium mt-2">₹42,000 night</p>
+            </div>
+
+            <div class="flex flex-col h-96 w-72">
+                <img src="static/img4.jpg" alt="" class="w-72 h-64 rounded-xl"/>
+                <div class="flex justify-between mt-2">
+                    <p class="text-sm font-medium">Kakinada,India</p>
+                    <div class="flex ">
+                        <i class='bx bxs-star'></i>
+                        <p class="text-sm font-light">5.0</p>
+                    </div>
+                </div>
+                <p class="text-sm text-gray-400">62 kilometers away</p>
+                <p class="text-sm text-gray-400">30 july- 4 Aug</p>
+                <p class="text-sm font-medium mt-2">₹42,000 night</p>
+            </div>
+
+            <div class="flex flex-col h-96 w-72">
+                <img src="static/img3.jpg" alt="" class="w-72 h-64 rounded-xl"/>
+                <div class="flex justify-between mt-2">
+                    <p class="text-sm font-medium">Kakinada,India</p>
+                    <div class="flex ">
+                        <i class='bx bxs-star'></i>
+                        <p class="text-sm font-light">5.0</p>
+                    </div>
+                </div>
+                <p class="text-sm text-gray-400">62 kilometers away</p>
+                <p class="text-sm text-gray-400">30 july- 4 Aug</p>
+                <p class="text-sm font-medium mt-2">₹42,000 night</p>
+            </div>
+
+            <div class="flex flex-col w-72 h-96">
+               <img src="static/img4.jpg" alt="" class="w-72 h-64 rounded-xl"/>
+               <div class="flex justify-between mt-2">
+                   <p class="font-medium text-sm">Kakinada,India</p>
+                   <div class="flex">
+                       <i class='bx bxs-star'></i>
+                       <p class="text-sm font-light">5.0</p>
+                   </div>
+               </div>
+                   <p class="text-gray-400 text-sm">62 kilometers away</p>
+                   <p class="text-gray-400 text-sm">30 july- 4 Aug</p>
+                   <p class=" text-sm font-medium mt-2">₹42,000 night</p>
+           </div>
+
+            <div class="flex flex-col w-72 h-96">
+               <img src="static/img2.jpg" alt="" class="w-72 h-64 rounded-xl"/>
+               <div class="flex justify-between mt-2">
+                   <p class="font-medium text-sm">Kakinada,India</p>
+                   <div class="flex">
+                       <i class='bx bxs-star'></i>
+                       <p class="text-sm font-light">5.0</p>
+                   </div>
+               </div>
+                   <p class="text-gray-400 text-sm">62 kilometers away</p>
+                   <p class="text-gray-400 text-sm">30 july- 4 Aug</p>
+                   <p class=" text-sm font-medium mt-2">₹42,000 night</p>
+           </div>
+        </div>
+    </main>
+
+    <section class="w-screen h-[500px] mt-4">
+        <h1 class="text-center font-bold text-7xl mb-8 text-gray-800">Booking Room</h1>
+        <div class="flex flex-col gap-6 justify-between items-center py-8 ">
+            <label>
+                <input class="border shadow-md rounded-lg px-6 py-2 " type="text" placeholder="enter name">
+            </label>
+            <label>
+                <input class="border shadow-md rounded-lg px-6 py-2" type="email" placeholder="enter email">
+            </label>
+            <label>
+                <input type="number" placeholder="phone" class="border shadow-md rounded-lg px-6 py-2">
+            </label>
+            <input type="submit" class="bg-red-600 text-white px-6 py-4 cursor-pointer rounded-lg" value="Send">
+        </div>
+    </section>
+
+
+    <footer class="flex justify-between fixed bottom-0 bg-white w-screen px-16 h-10">
+        <div class="flex space-x-5 items-center ">
+            <p class="text-gray-500 text-sm font-medium">&copy;2023 Airbnb,Inc</p>
+            <ul class="flex gap-4 text-gray-400 text-sm font-medium">
+                <li>Privacy</li>
+                <li>Terms</li>
+                <li>Sitemap</li>
+                <li>Company details</li>
+                <li>Destinations</li>
+            </ul>
+        </div>
+        <div class="flex gap-4 items-center justify-center text-gray-400 text-sm font-medium ">
+            <i class='bx bx-globe flex items-center  text-gray-600' style='color:rgba(0,0,0,0.71)' ></i>
+            <p>English(IN)</p>
+            <p>₹ INR</p>
+            <p>Support & resources</p>
+        </div>
+    </footer>
+
+</body>
+</html>
